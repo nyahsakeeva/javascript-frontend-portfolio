@@ -1,0 +1,96 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  background: #0b0f14;
+  color: #e8eef6;
+}
+
+.container {
+  max-width: 980px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  opacity: 0.8;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.btn {
+  border: 1px solid #2a3441;
+  background: #121a24;
+  color: #e8eef6;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #172131;
+}
+
+.btn-secondary {
+  background: transparent;
+}
+
+.status-text {
+  margin: 10px 0 18px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #2a3441;
+  background: #0f1620;
+}
+
+.status-text[data-type="loading"] {
+  opacity: 0.9;
+}
+
+.status-text[data-type="success"] {
+  border-color: #1f6f43;
+}
+
+.status-text[data-type="error"] {
+  border-color: #8a2e2e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  border: 1px solid #2a3441;
+  background: #0f1620;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.card-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.card-line {
+  margin: 6px 0;
+  opacity: 0.9;
+}
+
+.card-line span {
+  opacity: 0.7;
+}
